@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header .photo {
+  width: 165px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.header .title {
+  font-family: "Neue Machina";
+  text-align: center;
+}
+
+.informations {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.informations p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.informations p::before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0.5rem;
+}
+
+.informations .junior::before {
+  background-image: url("/assets/img/icons_header/junior.svg");
+}
+
+.informations .email::before {
+  background-image: url("/assets/img/icons_header/email.svg");
+}
+
+.informations .local::before {
+  background-image: url("/assets/img/icons_header/local.svg");
+}
+
+.informations .tel::before {
+  background-image: url("/assets/img/icons_header/tel.svg");
+}
