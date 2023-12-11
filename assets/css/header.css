@@ -55,3 +55,27 @@
 .informations .tel::before {
   background-image: url("/assets/img/icons_header/tel.svg");
 }
+
+@media only screen and (min-width: 768px) {
+  .header {
+    display: grid;
+    grid-template-areas:
+      "photo title"
+      "photo informations";
+  }
+
+  .header .photo {
+    grid-area: photo;
+    margin: 0 auto;
+  }
+
+  .header .title {
+    grid-area: title;
+    text-align: start;
+    max-width: 218px;
+  }
+
+  .header .informations {
+    grid-area: informations;
+  }
+}

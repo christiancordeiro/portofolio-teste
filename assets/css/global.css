@@ -20,10 +20,10 @@ body {
   border-radius: 1rem;
 }
 
-body::before {
+.main::before {
   content: "";
   background-image: url("/assets/img/backgroud.svg");
-  width: 150vw;
+  width: 140vw;
   height: 100vh;
   top: 0;
   left: 0;
@@ -34,10 +34,10 @@ body::before {
   background-size: contain;
 }
 
-body::after {
+.main::after {
   content: "";
   background-image: url("/assets/img/backgroud.svg");
-  width: 150vw;
+  width: 140vw;
   height: 100vh;
   bottom: 0;
   right: 0;
@@ -47,4 +47,16 @@ body::after {
   z-index: -1;
   background-size: contain;
   transform: rotate(180deg);
+}
+
+@media only screen and (min-width: 768px) {
+  .main {
+    max-width: 1024px;
+    margin: 1rem auto;
+  }
+
+  .main::before,
+  .main::after {
+    width: 70vw;
+  }
 }
