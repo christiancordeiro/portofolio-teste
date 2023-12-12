@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-
+    <link rel="stylesheet" href="./assets/css/skills.css" />
+    <link rel="stylesheet" href="./assets/css/portfolio.css" />
+    <link rel="stylesheet" href="./assets/css/languages.css" />
+    <link rel="stylesheet" href="./assets/css/acordeon.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/global.css" />
 
@@ -25,7 +28,7 @@
   </head>
 
   <body>
-    <div class="main">
+    <main class="main">
       <header class="header">
         <img
           src="./assets/img/me.jpeg"
@@ -38,12 +41,148 @@
         <div class="informations">
           <p class="junior">Junior Developer</p>
           <p class="local">Rio de Janeiro</p>
-          <p class="tel">21973496784</p>
-          <p class="email">christiancordeiro96@gmail.com</p>
+          <p class="tel"><a href="tel: (21) 973496784">21973496784</a></p>
+          <p class="email">
+            <a href="mailto: christiancordeiro96@gmail.com"
+              >christiancordeiro96@gmail.com</a
+            >
+          </p>
         </div>
       </header>
-    </div>
 
-    <script src="./assets/index.js"></script>
+      <section class="acordeon open">
+        <button class="trigger" type="button">Skills</button>
+        <div class="content">
+          <div class="skills">
+            <section class="tools">
+              <h3>Ferramentas:</h3>
+              <ul>
+                <li>
+                  <img
+                    src="./assets/img/icons/react.svg"
+                    alt="react"
+                    title="react"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/img/icons/js.svg"
+                    alt="javascript"
+                    title="javascript"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/img/icons/html.svg"
+                    alt="html"
+                    title="html"
+                  />
+                </li>
+                <li>
+                  <img src="./assets/img/icons/css.svg" alt="css" title="css" />
+                </li>
+
+                <li>
+                  <img
+                    src="./assets/img/icons/node.svg"
+                    alt="node"
+                    title="node"
+                  />
+                </li>
+              </ul>
+            </section>
+
+            <section class="personal">
+              <h3>Pessoal:</h3>
+              <ul>
+                <li>Liderança</li>
+                <li>Facilidade de Comunicação</li>
+                <li>Organização</li>
+                <li>Trabalho em equipe</li>
+                <li>Flexibilidade</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="acordeon">
+        <button class="trigger" type="button">Idiomas</button>
+        <div class="content">
+          <ul class="languages">
+            <li>Português</li>
+            <li>Inglês</li>
+            <li>Espanhol</li>
+            <li>Italiano</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="acordeon">
+        <button class="trigger" type="button">Educação</button>
+        <div class="content">
+          <ul class="educacao">
+            <li>
+              <h3>dio.me</h3>
+              <p>Formação JavaScript Developer - 2023</p>
+            </li>
+
+            <li>
+              <h3>Potencia Tech iFood</h3>
+              <p>Programação do Zero - 2023</p>
+            </li>
+
+            <li>
+              <h3>Origamid</h3>
+              <p>HTML e CSS para Iniciantes - 2023</p>
+            </li>
+
+            <li>
+              <h3>Origamid</h3>
+              <p>UI Design para Iniciantes- 2023</p>
+            </li>
+
+            <li>
+              <h3>
+                Instituto Federal de Educação, Ciência e Tecnologia
+                Sul-Rio-Grandense
+              </h3>
+              <p>Banco de Dados - 2023</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="acordeon">
+        <button class="trigger" type="button">Portfólio</button>
+        <div class="content">
+          <ul class="portfolio">
+            <li>
+              <span class="title">Criando um Lembrete</span
+              ><a href="#">Ir para site</a>
+            </li>
+
+            <li>
+              <span class="title">Criando um Lembrete</span
+              ><a href="#">Ir para site</a>
+            </li>
+
+            <li>
+              <span class="title">Criando um Lembrete</span
+              ><a href="http://www.google.com.br" target="_blank"
+                >Ir para site</a
+              >
+            </li>
+
+            <li>
+              <span class="title">Criando um Lembrete</span
+              ><a href="#">Ir para site</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <script src="./assets/js/js.js"></script>
   </body>
 </html>

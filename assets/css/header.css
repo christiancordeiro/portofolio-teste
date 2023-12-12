@@ -41,19 +41,19 @@
 }
 
 .informations .junior::before {
-  background-image: url("/assets/img/icons_header/junior.svg");
+  background-image: url("/assets/img/icons/junior.svg");
 }
 
 .informations .email::before {
-  background-image: url("/assets/img/icons_header/email.svg");
+  background-image: url("/assets/img/icons/email.svg");
 }
 
 .informations .local::before {
-  background-image: url("/assets/img/icons_header/local.svg");
+  background-image: url("/assets/img/icons/local.svg");
 }
 
 .informations .tel::before {
-  background-image: url("/assets/img/icons_header/tel.svg");
+  background-image: url("/assets/img/icons/tel.svg");
 }
 
 @media only screen and (min-width: 768px) {
