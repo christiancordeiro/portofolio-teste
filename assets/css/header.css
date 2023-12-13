@@ -40,8 +40,8 @@
   margin: 0.5rem;
 }
 
-.informations .junior::before {
-  background-image: url("/assets/img/icons/junior.svg");
+.informations .job::before {
+  background-image: url("/assets/img/icons/job.svg");
 }
 
 .informations .email::before {
