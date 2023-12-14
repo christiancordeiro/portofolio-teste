@@ -19,9 +19,6 @@
   margin: 0 0.5rem;
 }
 
-.skills .personal .ul {
-}
-
 @media only screen and (min-width: 768px) {
   .skills {
     display: grid;
